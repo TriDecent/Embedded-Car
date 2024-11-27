@@ -1,10 +1,10 @@
-const int MOTOR1_IN1 = 7;
-const int MOTOR1_IN2 = 8;
-const int MOTOR1_ENA = 5;
+const int MOTOR1_IN1 = 11;
+const int MOTOR1_IN2 = 9;
+const int MOTOR1_ENA = 6;
 
-const int MOTOR2_IN3 = 9;
-const int MOTOR2_IN4 = 11;
-const int MOTOR2_ENB = 6;
+const int MOTOR2_IN3 = 8;
+const int MOTOR2_IN4 = 7;
+const int MOTOR2_ENB = 5;
 
 void setup() {
   pinMode(MOTOR1_IN1, OUTPUT);
@@ -35,7 +35,6 @@ void loop() {
   analogWrite(MOTOR2_ENB, 255); // Max speed
   delay(2000); // Run motor1 in 2 seconds
 
-  // Dừng động cơ 2
   digitalWrite(MOTOR2_IN3, LOW);
   digitalWrite(MOTOR2_IN4, LOW);
   analogWrite(MOTOR2_ENB, 0);
