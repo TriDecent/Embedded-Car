@@ -49,7 +49,7 @@ void loop() {
       Serial.println("Moving backward");
     } else {
       if (distanceRight >= distanceLeft) {
-        moveBackwardWithSpeed(200);
+        // moveBackwardWithSpeed(200);
         delay(300);
         stopCar();
         delay(300);
@@ -59,7 +59,7 @@ void loop() {
         delay(300);
         Serial.println("Turning right");
       } else if (distanceRight < distanceLeft) {
-        moveBackwardWithSpeed(200);
+        // moveBackwardWithSpeed(200);
         delay(300);
         stopCar();
         delay(300);
